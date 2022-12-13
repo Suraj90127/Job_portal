@@ -1,179 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
 <head>
-  <!-- Design by foolishdeveloper.com -->
-    <title>Glassmorphism login Form Tutorial in html css</title>
- 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!--Stylesheet-->
-    <style media="screen">
-      *,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #080710;
-}
-.background{
-    width: 430px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-}
-.background .shape{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -80px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
-}
-form{
-    height: 520px;
-    width: 400px;
-    background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
-}
-form *{
-    font-family: 'Poppins',sans-serif;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    outline: none;
-    border: none;
-}
-form h3{
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 42px;
-    text-align: center;
-}
+  <meta charset="UTF-8">
+  <!---<title> Responsive Registration Form | CodingLab </title>--->
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-label{
-    display: block;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
-}
-input{
-    display: block;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;
-}
-::placeholder{
-    color: #e5e5e5;
-}
-button{
-    margin-top: 50px;
-    width: 100%;
-    background-color: #ffffff;
-    color: #080710;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.social{
-  margin-top: 30px;
-  display: flex;
-}
-.social div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
-  margin-right: 4px;
-}
 
-    </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <h2 class="navbar-logo"><a href="#">JOBACT</a></h2>
-        <div class="navbar-menu">
-            <a href="index.html">Home</a>
-            <a href="#jobs">Jobs</a>
-            <a href="#companies">Companies</a>
-            <a href="#tistinomial">Testinomial</a>
-            <a href="#blog">Blog</a>
-            <a href="signup.html">Sign in</a>
-        </div>
-        <div class="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-
-    </nav>
-
-
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
+  <nav class="navbar">
+    <h2 class="navbar-logo"><a href="#">JOBACT</a></h2>
+    <div class="navbar-menu">
+      <!-- <a href="/">Home</a> -->
+      <a href="/">Home</a>
+      <a href="login.html">Login</a>
     </div>
-    <form>
-        <h3>Login Here</h3>
+    <div class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
 
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
 
-        <button>Log In</button>
-        <div class="social">
-          <div class="go"><i class="fab fa-google"></i>  Google</div>
-          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+          <div class="input-box">
+            <label class="details">Full Name</label>
+            <input type="text" placeholder="Enter your name" id="fname">
+            <span id="fullname" class="fullname"></span><br>
+          </div>
+
+          <!-- <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" id="uname">
+             <span id="username" class="username"></span>
+          </div> -->
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" id="email" required>
+            <span id="Email" class="fullname"></span>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <!-- <label for="password">Password</label> -->
+            <input type="password" placeholder="Enter your password" id="password">
+            <span id="pass" class="fullname"></span>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" id="cpassword">
+            <span id="cpass" class="fullname"></span>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" id="phoneno">
+            <span id="Phone" class="fullname"></span>
+          </div>
+
         </div>
-    </form>
+
+        <div class="gender-details" id="btn1">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button" onclick="signupclick()" >
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
 </body>
+
 </html>
+
+<script>
+  function signupclick() {
+    var fname = document.getElementById("fname").value;
+    // var uname = document.getElementById("uname").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var cpassword = document.getElementById("cpassword").value;
+    var phone = document.getElementById("phoneno").value;
+    var btn1 = document.getElementById("btn1"), value;
+    //   if(fname=="" || email=="" || phone=="" || password==""  || cpassword==""){
+    //       alert("Invalid information")
+    //   }
+    //   else{
+    //     if(cpassword==password){
+    //       window.location.assign("login.html");
+    //     }
+    //     else{
+    //       alert("Enter currect password");
+    //     }
+    //     alert("Signup successfully")
+    //  }
+
+    if (fname == "") {
+      document.getElementById("fullname").innerHTML = " *Please Enter your Fullname*";
+      return false;
+    }
+
+    if ((fname.length <= 2) || (fname.length > 20)) {
+      document.getElementById("fullname").innerHTML = " *Use length must be 2 & 20*";
+      return false;
+    }
+
+    if (!isNaN(fname)) {
+      document.getElementById("fullname").innerHTML = " *Onlyn use char*";
+      return false;
+    }
+
+
+
+    if (email == "") {
+      document.getElementById("Email").innerHTML = " *Please Enter your Email*";
+      return false;
+    }
+
+    if (email.indexOf('@') <= 0) {
+      document.getElementById("Email").innerHTML = " *Please Enter valid Email id*";
+      return false;
+    }
+
+    if ((email.charAt(email.length - 4) != '.') && (email.charAt(email.length - 3) != '.')) {
+      document.getElementById("Email").innerHTML = " * ( . ) invalid position*";
+      return false;
+    }
+
+
+      if (password == "") {
+        document.getElementById("pass").innerHTML = " *Please Enter your password*";
+        return false;
+      }
+
+      if ((password.length <= 7) || (fname.length > 10)) {
+        document.getElementById("pass").innerHTML = " *Password must be 8 digit*";
+      }
+
+
+
+      if (cpassword == "") {
+        document.getElementById("cpass").innerHTML = " *Please Enter your confirm password*";
+        return false;
+      }
+
+      if (cpassword != password) {
+        document.getElementById("cpass").innerHTML = " *Please Enter your Currect password*";
+
+      }
+
+
+
+
+      if (phone == "") {
+        document.getElementById("Phone").innerHTML = " *Please Enter your Mobile No*";
+        return false;
+      }
+
+      if (isNaN(phone)) {
+        document.getElementById("Phone").innerHTML = " *Please Enter Only Mobile No in digit*";
+      }
+
+      if (phone.length != 10) {
+        document.getElementById("Phone").innerHTML = " * Mobile No must be 10 digit only*";
+      }
+      
+      else {
+        var fn = localStorage.setItem("fname", fname);
+        var el = localStorage.setItem("email",email);
+        var pw = localStorage.setItem("password",password);
+        var ph = localStorage.setItem("phone",phone);
+
+        // var fn = localStorage.geItem("fname", fname);
+        var el = localStorage.getItem("email");
+        // var pw = localStorage.geItem("password",password);
+        // var ph = localStorage.geItem("phone",phone);
+        if(email==el){
+          document.getElementById("Email").innerHTML = " * This email already login *";
+          // return false;
+        }
+       window.location.assign("login.html");
+      alert("Signup is Successfully Go to login")
+      }
+    }
+</script>
+
+
+<style>
+  .fullname {
+    color: red;
+  }
+
+  .navbar-menu {
+    width: 117px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Poppins',sans-serif; 
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+
+  .container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+
+  .content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+
+  form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid {
+    border-color: #9b59b6;
+  }
+
+  form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  form .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+  }
+
+  form .category label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  form .category label .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  #dot-1:checked~.category label .one,
+  #dot-2:checked~.category label .two,
+  #dot-3:checked~.category label .three {
+    background: #9b59b6;
+    border-color: #d9d9d9;
+  }
+
+  form input[type="radio"] {
+    display: none;
+  }
+
+  form .button {
+    height: 45px;
+    margin: 35px 0
+  }
+
+  form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+
+  form .button input:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+
+  @media(max-width: 584px) {
+    .container {
+      max-width: 100%;
+    }
+
+    form .user-details .input-box {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    form .category {
+      width: 100%;
+    }
+
+    .content form .user-details {
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+      width: 5px;
+    }
+  }
+
+  @media(max-width: 459px) {
+    .container .content .category {
+      flex-direction: column;
+    }
+  }
+</style>

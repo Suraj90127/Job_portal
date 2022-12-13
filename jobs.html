@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+    <title>Jobs</title>
+</head>
+<body>
+
+    <!-- header -->
+
+    <header>
+        <h1 class="header-title">
+            FIND YOUR <br> <span>PERFECT JOB</span> <br> EASLY
+        </h1>
+    </header>
+
+    <!-- search  -->
+
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input class="search-input" type="text" placeholder="job title or keyword">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar  -->
+
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">JOBACT</a></h2>
+        <div class="navbar-menu">
+            <a href="/"><i class="fa-solid fa-house-user"></i>Home</a>
+            <a href="postjobs.html"><i class="fa-solid fa-arrow-up-from-bracket"></i>AddJob</a>
+            <a href="signup.html"><i class="fa-solid fa-user-plus"></i>Sign in</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+    <section class="job-list" id="jobs">
+        <div class="job-card" onclick="hirejobs()">
+            <div class="job-name">
+                <img class="job-profile" src="image/tesla.png">
+                <div class="job-detali">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>Mechanical Design Engineer - Drive Systems Lorem ipsum dolor sit amet consectetur adipisicing elit. h78t6u72yq7aqwguy </p>
+                </div>
+                <div class="job-level">
+                    <a class="level-a" href="https://www.tesla.com/careers/search/job/mechanical-design-engineer-91731">IT Desige</a>
+                    <a class="level-b" href="#">CSS</a>
+                    <a class="level-c" href="#">JavaScript</a>
+                </div>
+                <div class="job-posted">
+                    Posted 2 min ago
+                </div>
+            </div>
+        </div>
+    
+        <div class="job-card" onclick="ebay()">
+            <div class="job-name">
+                <img class="job-profile" src="image/ebay.png">
+                <div class="job-detali">
+                    <h4>eBay</h4>
+                    <h3>Business Development</h3>
+                    <p>Apply for Sales & Business Development jobs at eBay. Browse our opportunities and apply today to
+                        a eBay Sales & Business Development position.</p>
+                </div>
+                <div class="job-level">
+                    <a class="level-a" href="#">Customer Service</a>
+                    <a class="level-b" href="#">DataScience</a>
+                    <a class="level-c" href="https://jobs.ebayinc.com/us/en/c/sales-business-development-jobs">Sales </a>
+                </div>
+                <div class="job-posted">
+                    Posted 2 min ago
+                </div>
+            </div>
+        </div>
+    
+        <div class="job-card" onclick="tcl()">
+            <div class="job-name">
+                <img class="job-profile" src="image/tcl.png">
+                <div class="job-detali">
+                    <h4>TCL</h4>
+                    <h3>Business Development</h3>
+                    <p>Tcl Jobs in Noida, Uttar Pradesh, India (32 new) · Manager-Learning Expert · Automation Testing ·
+                        Design Verification Engineer.</p>
+                </div>
+                <div class="job-level">
+                    <a class="level-a" href="#">HTML</a>
+                    <a class="level-b" href="#">CSS</a>
+                    <a class="level-c" href="#">JavaScript</a>
+                </div>
+                <div class="job-posted">
+                    Posted 1 day ago
+                </div>
+            </div>
+        </div>
+    
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="image/tiktok.png">
+                <div class="job-detali">
+                    <h4>Tiktok</h4>
+                    <h3>Digital Marketin</h3>
+                    <p>The team is looking for an experienced and talented Digital Marketing Manager ... and nurture
+                        leads to generate business opportunities for the sales team 3.</p>
+                </div>
+                <div class="job-level">
+                    <a class="level-a" href="#">CSS</a>
+                    <a class="level-c" href="#">JavaScript</a>
+                </div>
+                <div class="job-posted">
+                    Posted 1 day ago
+                </div>
+            </div>
+        </div>
+    
+        <div class="job-card" onclick="yt()">
+            <div class="job-name">
+                <img class="job-profile" src="image/youtube.png">
+                <div class="job-detali">
+                    <h4>YouTube</h4>
+                    <h3>UI UX Designer</h3>
+                    <p>Design the tools creators, artists and viewers need. At YouTube, designers are surrounded by
+                        creative people and exciting challenges.</p>
+                </div>
+                <div class="job-level">
+                    <a class="level-a" href="https://careers.google.com/jobs/results/?skills=html,css,javascript">HTML</a>
+                    <a class="level-b" href="https://careers.google.com/jobs/results/?skills=html,css,javascript">CSS</a>
+                    <a class="level-c" href="https://careers.google.com/jobs/results/?skills=html,css,javascript">JavaScript</a>
+                </div>
+                <div class="job-posted">
+                    Posted 1 hour ago
+                </div>
+            </div>
+        </div>
+    
+        <div class="job-card" onclick="amazon()">
+            <div class="job-name">
+                <img class="job-profile" src="image/amazon.png">
+                <div class="job-detali">
+                    <h4>Amazon</h4>
+                    <h3>Software Engineer</h3>
+                    <p>We're looking for software engineers who want to invent, build, and sometimes break things to
+                        make them easier, faster, better, and more cost-effective.
+    
+                    </p>
+                </div>
+                <div class="job-level">
+                    <a class="level-a" href="#">HTML</a>
+                    <a class="level-b" href="#">CSS</a>
+                    <a class="level-c" href="#">JavaScript</a>
+                </div>
+                <div class="job-posted">
+                    Posted 1 hour ago
+                </div>
+            </div>
+        </div>
+        <button class="job-more">More List</button>
+    
+    </section>
+    
+    
+    <script src="app.js"></script>
+
+
+</body>
+</html>
+
+<script>
+    function hirejobs()  {
+        window.location.assign("https://www.tesla.com/careers/search/?department=14&site=IN")
+    }
+
+    function ebay() {
+        window.location.assign("https://jobs.ebayinc.com/us/en/c/sales-business-development-jobs")
+    }
+
+    function tcl() {
+        window.location.assign("http://india-career.tcl.com/")
+    }
+
+    function yt() {
+    window.location.assign("https://careers.google.com/jobs/results/")
+    }
+
+    function amazon() {
+        window.location.assign("https://www.amazon.jobs/en/")
+    }
+</script>
+
+
+<style>
+    .fa-solid{
+        color: white;
+        padding: 10px;
+    }
+.navbar{
+        background-color: black;
+    }
+
+    header{
+    width: 100%;
+    height: 80%;
+    background-image:url("image/jobs2.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+</style>
